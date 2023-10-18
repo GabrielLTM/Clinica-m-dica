@@ -1,0 +1,233 @@
+* {
+    font-family: 'Source Sans Pro';
+    margin: 0 auto;
+}
+.limitar-secao{
+    margin: 25px auto;
+    max-width: 1024px;
+}
+header{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: #02bdbd;
+    width: 100%;
+    height: 70px;
+}
+.imagem-topo{
+    margin-left: 5%;
+}
+header nav{
+    margin-right: 5%;
+}
+
+.link-topo a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 30px;
+}
+.link-topo a:hover{
+    color: #205869;
+}
+.recepcao{
+    background: linear-gradient(rgba(0, 0, 0, 0.233), rgba(0, 0, 0, 0.288)),url(assets/recepcao2.jpg);
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60vh;
+}
+.recepcao div{
+    height: 100%;
+     color: #fff;
+     padding: 10px;
+     display: flex;
+     align-items: center
+}
+.titulo-recepcao p{
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 38px;
+    margin-left: 15px;
+}
+.conteudo-principal{
+    text-align: center;
+    color: #949494;
+    margin-top: 30px;
+}
+.segunda-secao{
+    display: flex;
+    align-items: center;
+    
+    color: #949494;
+    justify-content: center;
+}
+.segunda-secao img{
+    margin-right: 0;
+}
+.encontrar{
+    line-height: 30px;
+    margin-left: 20px;
+   
+}
+.encontrar h1{
+    padding-bottom: 10px;
+}
+.terceira-secao{
+    color: #949494;
+    text-align: center;
+    line-height: 20px;
+}
+.terceira-secao h1{
+    padding-bottom: 10px;
+}
+#especialidades{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+
+}
+#especialidades img{
+    width: 400px;
+    height: 300px;
+    border-radius: 4px;
+}
+.box{
+    box-shadow: 10px 10px 10px;
+    margin: 10px 40px;
+    border-radius: 4px;
+    
+}
+.box h2{
+    padding: 10px 0;
+}
+.horarios{
+    text-align: center;
+    margin-top: 50px;
+}
+.horarios a{
+    background-color: rgb(0, 180, 180);
+    text-decoration: none;
+    color: white;
+    padding: 20px 40px;
+    font-weight: bold;
+    
+}
+#contato{
+    margin-top: 40px;
+    color: #949494;
+}
+#contato p{
+    margin-top: 20px;
+}
+iframe{
+    width: 60%;
+    margin: 0 20%;
+}
+footer{
+    margin-top: 50px;
+    background-color: rgb(34, 100, 109);
+    height: 350px;
+    text-align: center;
+}
+footer img{
+    margin-top: 10px;
+}
+footer p{
+    margin-top: 30px;
+    color:  white;
+    font-weight: bold;
+}
+
+
+/*ESPECIALIDADES*/
+
+.titulo{
+    display: flex;
+    margin: 20px auto;
+    align-items: center;
+    justify-content: center;
+}
+.titulo a{
+    font-size: 18px;
+    border-bottom: 2px solid aqua;
+    margin: 20px 20px;
+    text-decoration: none;
+    color: black;
+}
+.conheca{
+    text-align: center;
+    color: #949494;
+}
+.conheca p{
+    margin-top: 10px;
+}
+.tabela{
+    display: flex;
+    margin-top: 30px;
+}
+.tabela img{
+    width: 330px;
+    height: 250px;
+    margin: 0;
+}
+.tabela-especialista{
+    width: 70%;
+    text-align: justify;
+    border-spacing: 0;
+    height: 250px;
+}
+th{
+   background-color: #02bdbd; 
+   color: white;
+   padding: 10px;
+}
+td{
+    padding-left: 8px;
+    color: #949494;
+}
+tbody tr:nth-child(odd){
+    background-color: #ddd;
+}
+@media(max-width:768px){
+    header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+        
+    }
+    .link-topo{
+        margin: 5px auto;
+        padding-bottom: 20px;
+        
+        
+    }
+    .imagem-topo{
+        margin: 0 auto;
+        width: 80%;
+        text-align: center;
+        border-bottom: 1px solid #949494;
+        margin-top: 10px;
+    }
+    .segunda-secao img{
+        display: none;
+    }
+    iframe{
+        width: 100%;
+        margin: 10px 0;
+    }
+    .tabela img{
+        display: none;
+    }
+    .tabela-especialista{
+        width: 100%;
+    }
+    .titulo a{
+        margin: 20px 10px;
+    }
+}
